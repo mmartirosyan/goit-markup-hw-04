@@ -159,8 +159,12 @@ nav {
 .block-one {
   background-color: var(--dark-background-color);
   color: var(--white-color);
-  background-image: url(../images/Img-17.jpg);
-  /* linear-gradient(rgba(47, 48, 58, 0.4)), */
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img-17.jpg);
   background-size: cover;
   max-width: 1600px;
   margin-left: auto;
@@ -305,6 +309,14 @@ nav {
   border-radius: 4px;
   color: var(--links-default-color);
   fill: currentColor;
+}
+
+.clients-link:hover {
+  border-color: var(--hover-text-color);
+}
+
+.clients-link:hover .clients-link-svg {
+  fill: var(--hover-text-color);
 }
 
 /*footer*/
